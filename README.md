@@ -1,6 +1,6 @@
 # My Portfolio
 
-A simple portfolio site built with Node, React, HTML, and CSS.
+A simple portfolio site built with Node, HTML, and CSS.
 
 ## Live Demo
 
