@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# My Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple portfolio site built with Node, React, HTML, and CSS.
 
-## Available Scripts
+## Live Demo
 
-In the project directory, you can run:
+[https://oscar.havsberg.com](https://oscar.havsberg.com)
 
-### `npm start`
+## Tech
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Node.js
+* HTML
+* CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Quick start
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Node.js installed
+* npm
 
-### `npm run build`
+### Install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+git clone https://github.com/konglene/Portfolio.git
+cd Portfolio
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Run
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm start
+```
 
-### `npm run eject`
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Build
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm run build
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The build folder contains the static files.
 
-## Learn More
+## Project layout
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* public
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  * index.html
+  * images
+  * projects
+* src
+  * styles
+  * data
+  * App.js
+  * index.js
 
-### Code Splitting
+## Add a project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* Edit src/data/projects.js or src/data/projects.json
+* Add an image to src/assets
+* Import or load the new entry in the Projects page
+* Restart the dev server if it runs
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Troubleshooting
 
-### Making a Progressive Web App
+* Port in use
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+  ```bash
+  PORT=3001 npm start
+  ```
+* Environment variables
 
-### Advanced Configuration
+  * Use a .env file at the project root
+  * Prefix client variables with REACT\_APP\_
+* Images not loading
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+  * Check paths relative to public
+  * Use imports for images inside src
 
-### Deployment
+## Tests
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+npm test
+```
 
-### `npm run build` fails to minify
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Fork the repo
+* Create a branch named feature/your-feature
+* Commit with clear messages
+* Push and open a pull request
+
+## License
+
+MIT License
+Copyright (c) 2025 kongle
